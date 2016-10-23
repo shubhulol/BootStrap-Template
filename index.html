@@ -41,6 +41,9 @@
 			color: #ffffff;
 			font-size: 500%;
 		}
+		.down {
+			margin-top: 2px;
+		}
 	</style>
 </head>
 <body>
@@ -131,10 +134,16 @@
 				<div class="modal-body">
 					<form>
 						<div class="form-group">
-							<input type="email" name="email" placeholder="Enter Your Email Address" class="form-control">
+							<div class="input-group">
+								<span class="input-group-addon glyphicon glyphicon-envelope"></span>
+								<input type="email" name="email" placeholder="Enter Your Email Address" class="form-control down">
+							</div>
 						</div>
 						<div class="form-group">
-							<input type="password" name="password" placeholder="Enter Your Password" class="form-control">
+							<div class="input-group">
+								<span class="input-group-addon glyphicon glyphicon-pencil"></span>
+								<input type="password" name="password" placeholder="Enter Your Password" class="form-control down">
+							</div>
 						</div>
 						<button type="submit" class="btn btn-success btn-lg text-center marginTop">Login</button>
 					</form>
