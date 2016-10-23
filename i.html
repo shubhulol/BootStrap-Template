@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>BootStrap</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+
+	<div class="navbar navbar-inverse">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a href="#" class="navbar-brand">Website</a>
+			</div>
+			<ul class="nav navbar-nav">
+				<li class="active"><a href="#">Home</a></li>
+				<li><a href="#">Page1</a></li>
+				<li><a href="#">Page2</a></li
+				>
+			</ul>
+
+			<ul class="nav navbar-nav navbar-right">
+      <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    </ul>
+		</div>
+	</div>
+
+
+			<div class="collapse navbar-collapse">
+				<ul class="nav navbar-nav">
+					<li><a href="#">Page1</a></li>
+					<li class="active"><a href="#">Page2</a></li>
+					<li><a href="#">Page3</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="jumbotron">
+		<h1>My First BootStrap Page
+		<small>This is some text.</small></h1>
+		<mark>Use the mark element to highlight text.</mark>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-xs-4 bg-primary">.col-sm-4</div>
+		<div class="col-lg-4 bg-success">.col-sm-4</div>
+		<div class="col-md-4 bg-danger">.col-sm-4</div>
+	</div>
+
+	<center>
+	<div>
+		<div class="col-md-5 container text-center alert alert-success">
+		<strong>Hello!</strong>Welcome To our BootStrap practice page.
+		<strong class="text-danger">Thanks for Visiting</strong>
+		</div>
+	</div>
+	</center>
+
+	<br>
+	<div class="row">
+		<div class="col-lg-4">.col-lg-4</div>
+		<div class="col-lg-8">.col-lg-8</div>
+	</div>
+
+	<div class="container">
+		<p><abbr title="World Health Organization">WHO</abbr></p>
+		<blockquote class="blockquote-reverse">I am learning BootStrap from W3schools and downloading songs from DJjohal <br> <small>-Mustaq</small>
+		</blockquote>
+	</div>
+
+	<div class="container">
+		<h1>Description Lists</h1>
+		<p>The dl elements indicates a description list:</p>
+		<dl>
+			<dt>Coffee</dt>
+			<dd>- black hot drink</dd>
+			<dt>Milk</dt>
+			<dd>- white cold drink</dd>
+		</dl>
+
+		<code>Now i am using code tag in html5<br>Hello World</code>
+		<h2>Now i am writing Hello World Program in C++</h2>
+			<kbd>
+				#include &lt;iostream&glt;;<br>
+				using namespace std;<br>
+				<br>
+				int main() {
+					<br>cout&lt;&lt;"Hello World";<br>
+					return 0;
+				}
+			</kbd>
+
+			<div class="table-responsive">
+			<table class="table table-striped table-hover table-bordered">
+				<thead>
+					<tr class="bg-info">
+						<th>Firstname</th>
+						<th>Lastname</th>		
+						<th>Email</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr class="bg-primary">
+						<td>John</td>
+						<td>Doe</td>
+						<td>john@example.com</td>
+					</tr>
+					<tr class="bg-primary">
+						<td>Marry</td>
+						<td>Moe</td>
+						<td>marry@example.com</td>
+					</tr>
+					<tr class="bg-primary">
+						<td>July</td>
+						<td>Dooley</td>
+						<td>july@example.com</td>
+					</tr>
+				</tbody>
+			</table>
+			</div>
+	</div>
+
+	<div class="container">
+		<h2>Image Gallery</h2>
+		<p>The .thumbnail class can be used to display an image gallery. Click on the images to see it in full size</p>
+		<div class="row">
+			<div class="col-md-4">
+				<a href="images/1.jpg" class="thumbnail rounded"><p class="text-primary">The Linux Torvalds</p><img src="images/1.jpg" width="350" height="350"/></a>
+				
+			</div>
+
+			<div class="col-md-4">
+				<a href="images/2.jpg" class="thumbnail circle"><p class="text-success">Desktop Wallpaper</p><img src="images/2.jpg" width="350" height="350"/></a>
+				
+			</div>
+
+			<div class="col-md-4">
+				<a href="images/3.jpg" class="thumbnail circle"><p class="text-danger">How to ?</p><img src="images/3.jpg" width="350" height="350"/>
+			</div></a>
+				
+		</div>
+	</div>
+
+
+
+	<section class="container">
+		<h2>Responsive Embed</h2>
+		<div class="embed-responsive embed-responsive-16by9">
+			<iframe src="https://www.youtube.com/embed/XGSy3_Czz8k"></iframe>
+		</div>
+	</section>
+
+
+	<div class="container">
+		<div class="page-header">
+			<h4 class="well">Hello World</h4>
+			<h4 class="well well-sm">This is the first program</h4>
+			<h4 class="well well-lg">This is a large well from BootStrap ...</h4>
+		</div>
+	</div>
+
+
+
+	<div class="container">
+		<h2>Alerts</h2>
+		<p>The a element with class="close" and data-dismiss="alert" is used to close the alert box
+		</p>
+
+		<div class="alert  alert-success">
+			<a href="#" class="close" data-dismiss="alert" arial-label="close">&times;</a>
+			<strong>Success!</strong>This alert box could indicate a successful or positive action
+		</div>
+
+		<div class="alert alert-info fade in">
+			<a href="#" class="close" data-dismiss="alert" arial-label="close">&times;</a>
+			<strong>Info!</strong>This alert box could indicate a neutral informative change or action
+		</div>
+
+		<div class="alert alert-warning fade in">
+			<a href="#" class="close" data-dismiss="alert" arial-label="close">&times;</a>
+			<strong>Warning!</strong>This alert box indicate a warning that might need attention.
+		</div>
+
+		<div class="alert alert-danger">
+			<a href="#" class="close" data-dismiss="alert" arial-label="close">&times;</a>
+			<strong>Danger!</strong>This alert box could indicate a dangerous or potentially negative action.
+		</div>
+	</div>
+
+
+	<div class="container btn-group btn-group-md btn-group-vertical">
+		<button type="button" class="btn btn-default">Default</button>
+		<button type="button" class="btn btn-success active">Success</button>
+		<button type="button" class="btn btn-info active">Info</button>
+		<button type="button" class="btn btn-warning disabled">Warning</button>
+		<button type="button" class="btn btn-danger">Danger</button>
+		<button type="button" class="btn btn-primary">Primary</button>
+		<button type="button" class="btn btn-link disabled">Link</button>
+	</div>
+
+
+	<div class="container">
+		<h2>Justified Button Group</h2>
+		<div class="btn-group btn-group-justified">
+			<a href="#" class="btn btn-primary">Apple</a>
+			<a href="#" class="btn btn-primary">SamSung</a>
+			<a href="#" class="btn btn-primary">Sony</a>
+		</div>
+	</div>
+
+
+
+	<div class="container">
+		<h2>Nesting Button Groups</h2>
+		<p>Nest button groups to create drop down menu</p>
+		<div class="btn-group">
+			<button type="button" class="btn btn-primary">Apple</button>
+			<button type="button" class="btn btn-primary">Samsung</button>
+			<div class="btn-group">
+				<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+					Sony <span class="caret"></span>
+				</button>
+				<ul class="dropdown-menu" role="menu">
+					<li><a href="#">Tablet</a></li>
+					<li><a href="#">SmartPhone</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+
+<br>
+
+	<div class="progress">
+		<div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valmin="0" aria-valuemanx="100" style="width:70%;">
+			70%
+		</div>
+	</div>
+
+
+	<div class="container">
+		<h2>Colored Progress Bars</h2>
+		<p>The contextual classes colors the progress bars:</p>
+		<div class="progress">
+			<div class="progress-bar progress-bar-success" role="progressbar" arial-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 50%">
+				50%
+			</div>
+		</div>
+
+
+		<div class="progress">
+			<div class="progress-bar progress-bar progress-bar-info" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 50%">60%</div>
+		</div>
+
+
+	<div class="progress">
+		<div class="progress-bar progress-bar-primary" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="70" style="width: 50%;">70%</div>
+	</div>
+
+
+
+	<div class="progress">
+		<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 50%">80%</div>
+	</div>
+
+
+	<div class="progress">
+		<div class="progress-bar progress-bar-warning progress-bar-striped active" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:50%">
+			100%
+		</div>
+	</div>
+	</div>
+
+
+	<div class="container">
+		<h1 style="color:hotpink; font-weight: bold;">Pagination<small>This shows what is the current page</small></h1>
+
+		<ul class="pagination">
+			<li><a href="#">1</a></li>
+			<li><a href="#">2</a></li>
+			<li><a href="#">3</a></li>
+			<li><a href="#">4</a></li>
+		</ul>
+
+		<ul class="pagination">
+			<li class="active"><a href="#">1</a></li>
+			<li><a href="#">2</a></li>
+			<li><a href="#">3</a></li>
+			<li><a href="#">4</a></li>
+		</ul>
+
+		<ul class="breadcrumb">
+			<li><a href="#">Home</a></li>
+			<li><a href="#">About</a></li>
+			<li><a href="#">Back</a></li>
+			<li><a href="#">Exit</a></li>
+		</ul>
+	</div>
+
+	<div class="container-fluid">
+		<ul class="pager">
+			<li class="previous"><a href="#">Previous</a></li>
+			<li class="next"><a href="#">Next</a></li>
+		</ul>
+	</div>
+
+
+
+
+	<div class="container">
+		<h3>List Group</h3>
+		<ul class="list-group">
+			<li class="list-group-item">First Item</li>
+			<li class="list-group-item">Second item</li>
+			<li class="list-group-item">Third item</li>
+		</ul>
+
+
+
+		<h1>List Group with Badges</h1>
+		<li class="list-group-item" style="width: 50%;">Frist Item <span class="badge">66</span></li>
+		<li class="list-group-item list-group-item-primary bg-danger">Second item <span class="badge">77</span></li>
+		<li class="list-group-item list-group-item-success">Third item <span class="badge">99</span></li>
+	</div>
+
+
+
+	<div class="container">
+	<div class="panel-group">
+		<div class="panel panel-default">
+		<div class="panel-heading">panel Heading
+			</div>
+			<div class="panel-body">A Basic Panel</div>
+		</div>
+
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				This is another heading
+			</div>
+			<div class="panel-body"></div>
+		</div>
+
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				This is the third heading
+			</div>
+			<div class="panel-body">Hello World</div>
+		</div>
+	</div>
+	</div>
+
+
+
+
+	<div class="container">
+		<div class="panel-group">
+			<div class="panel panel-primary">
+				<div class="panel-heading">
+					This is a heading
+				</div>
+				<div class="panel-body">This is body of the primary</div>
+			</div>
+
+
+
+			<div class="panel panel-warning">
+				<div class="panel-heading">This is panel warning</div>
+				<div class="panel-body">This is warning body</div>
+			</div>
+
+			<div class="panel panel-danger">
+				<div class="panel-heading">This is danger</div>
+				<div class="panel-body">Danger body</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<div class="row">
+	<div class="col-md-offset-10">
+		<div class="dropdown">
+		<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+		<span class="glyphicon glyphicon-fingerprint glyphicon-lg"></span>
+			DropDown Example
+			<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+			<li class="active"><a href="#">HTML</a></li>
+			<li><a href="#">CSS</a></li>
+			<li><a href="#">JavaScript</a></li>
+		</ul>
+	</div>
+	</div>
+	</div>
+
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-offset-4">
+				<h1>collapse</h1>
+				<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">Simple collapsible</button>
+  <div id="demo" class="collapse">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+  </div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<div class="container">
+		<h1>Tabs/Pills</h1>
+		<ul class="list-inline">
+			<li class="active"><a href="#">List1</a></li>
+			<li><a href="#">list2</a></li>
+			<li><a href="#">List3</a></li>
+		</ul>
+
+		<h1>nav-tabs</h1>
+		<ul class="nav nav-tabs">
+			<li class="active"><a href="#">Home</a></li>
+			<li><a href="#">Menu1</a></li>
+			<li><a href="#">Menu2</a></li>
+			<li><a href="#">Menu3</a></li>
+			<li><a href="#">Menu4</a></li>
+		</ul>
+
+
+		<h1>Tabs with dropdown</h1>
+		<ul class="nav nav-tabs">
+			<li class="active"><a href="#">Home</a></li>
+			<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown Menu<span class="caret"></span>
+			</a>
+			<ul class="dropdown-menu">
+				<li><a href="#">Submenu1</a></li>
+				<li><a href="#">Submenu2</a></li>
+			</ul>
+			</li>
+		</ul>
+	</div>
+
+
+
+	<div class="container">
+		<form>
+			<div class="form-group">
+				<label for="username">
+					username
+				</label>
+				<input type="email" name="username" class="form-control" placeholder="Enter Email">
+			</div>
+			<div class="form-control">
+				<label for="password">
+					password
+				</label>
+				<input type="password" name="password" class="form-control">
+			</div>
+			<div class="checkbox" style="margin-top: 10px;">
+				<label><input type="checkbox" name="rember" value="Remember Me">Remember Me</label>
+			</div>
+			<button type="submit" class="btn btn-success">Login</button>
+		</form>
+	</div>
+
+
+
+<div class="container">
+	<div class="media">
+		<div class="media-left">
+			<img src="images/1.jpg" class="media-object" style="width:60px">
+		</div>
+		<div class="media-body">
+			<h4 class="media-heading">Linus Torvalds</h4>
+			<p>This is linus torvalds creator of linux kernel</p>
+		</div>
+	</div>
+</div>
+
+<div class="container">
+	<div class="media">
+		<div class="media-right">
+			<img src="images/1.jpg" class="media-object" style="width:60px;">
+		</div>
+		<div class="media-body">
+			<h6 class="media-heading">
+				Linus torvalds
+			</h6>
+			<p>This is another linus torvalds post.</p>
+		</div>
+	</div>
+</div>
+
+
+
+<div class="container">
+	<div class="media">
+		<div class="media-left">
+			<img src="images/2.jpg" class="media-object" style="width:60px;">
+			</div>
+			<div class="media-body">
+				<h4 class="media-body">Hello world</h4>
+				<p>Hello world Hello world Hello world Hello world Hello world Hello world Hello world Hello world Hello world Hello worldHello world Hello world Hello world Hello world Hello world Hello world Hello world Hello world Hello world Hello worldHello world Hello worldHello world Hello world Hello world Hello worldHello world Hello worldHello world Hello worldHello world Hello worldHello world Hello worldHello world Hello worldHello world Hello worldHello world Hello worldHello world Hello worldHello world Hello worldHello world Hello worldHello world Hello worldHello world Hello world Hello world Hello worldHello world Hello worldHello world Hello worldHello world Hello worldHello world Hello worldHello world Hello world Hello world Hello world Hello world Hello world Hello world Hello world Hello world Hello world Hello world Hello world Hello world Hello world Hello world Hello world Hello world Hello worldHello world Hello world Hello world Hello world Hello world Hello world Hello world Hello world Hello world Hello world Hello world Hello world Hello world Hello world Hello world Hello world Hello world Hello world Hello world Hello world</p>
+
+
+				<div class="media">
+					<div class="media-left">
+						<img src="images/1.jpg" class="media-object" style="width:60px">
+						<div class="media-body">
+							<h3 class="media-body">
+								This is nested
+							</h3>
+							<p>Hello world Hello worldHello world Hello worldHello world Hello worldHello world Hello worldHello world Hello worldHello world Hello worldHello world Hello worldHello world Hello worldHello world Hello worldHello world Hello worldHello world Hello worldHello world Hello worldHello world Hello worldHello world Hello worldHello world Hello worldHello world Hello worldHello world Hello worldHello world Hello worldHello world Hello worldHello world Hello worldHello world Hello worldHello world Hello worldHello world Hello worldHello world Hello worldHello world Hello worldHello world Hello worldHello world Hello worldHello world Hello worldHello world Hello worldHello world Hello worldHello world Hello worldHello world Hello worldHello world Hello worldHello world Hello worldHello world Hello worldHello world Hello worldHello world Hello worldHello world Hello worldHello world Hello worldHello world Hello worldHello world Hello worldHello world Hello worldHello world Hello worldHello world Hello worldHello world Hello worldHello world Hello worldHello world Hello worldHello world Hello worldHello world Hello worldHello world Hello worldHello world Hello worldHello world Hello worldHello world Hello worldHello world Hello worldHello world Hello worldHello world Hello worldHello world Hello worldHello world Hello worldHello world Hello worldHello world Hello worldHello world Hello worldHello world Hello world</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<!--
+<div class="container">
+  <h2>Small Modal</h2>
+  
+  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Small Modal</button>
+
+  
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Modal Header</h4>
+        </div>
+        <div class="modal-body bg-success">
+          <p>This is a small modal.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+
+<!--
+<div class="container">
+<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Small Modal</button>
+
+<div class="modal fade" id="myModal" role="dialog">
+	<div class="modal-dialog modal-lg">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h2>Modal Content</h2>
+				<button class="close" data-dismiss="modal">&times;</button>
+			</div>
+			<div class="modal-body">
+				<p>This is a modal.This is a modal.This is a modal.This is a modal.This is a modal.This is a modal.This is a modal.This is a modal.This is a modal.This is a modal.This is a modal.This is a modal.This is a modal.This is a modal.This is a modal.This is a modal.This is a modal.This is a modal.This is a modal.This is a modal.This is a modal.This is a modal.This is a modal.This is a modal.This is a modal.This is a modal.This is a modal.This is a modal.This is a modal.This is a modal.This is a modal.</p>
+			</div>
+			<div class="modal-footer">
+				<button class="btn btn-danger" type="button" data-dismiss="modal">Close</button>
+			</div>
+		</div>
+	</div>
+</div>
+</div> -->
+
+
+<div class="container">
+	<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Open Modal</button>
+
+	<div class="modal fade" id="myModal" role="dialog">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button class="close" data-dismiss="modal">&times;</button>
+					<h1>This is a demo modal.</h1>
+				</div>
+				<div class="modal-body">
+					<p>This is a demo. This is a demo. This is a demo. This is a demo. This is a demo. I am working on a demo. This is working demo.</p>
+				</div>
+				<div class="modal-footer">
+					<button class="btn btn-info" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>
