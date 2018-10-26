@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		T
+	</title>
+</head>
+<body>
+	<form name="frm">	
+		Name:<input type="text" id="name" name="name"><br>
+		Roll no: <input type="number" id="rollno" name="rollno"><br>
+		<button onclick="f1()" type="button">Check</button>
+	</form>
+
+	<script type="text/javascript">
+		var student = {
+				rollno: 0,
+				name: "",
+				setName: function(t){
+					if(!isNaN(t))
+						return false;
+					this.name = t;
+					return true;
+				},
+				setRoll: function(t){
+					if(isNaN(t))
+						return false;
+					this.rollno = parseInt(t);
+					return true;
+				}
+
+			};
+
+		
+		function f1(){
+			
+			if(s1.setName(document.frm.name.value) && s1.setRoll(document.getElementById("rollno").value)){
+				console.log("Test Pass");
+			} 
+			else 
+				console.log("Test Fails");
+			console.log(student);
+
+			}
+
+
+	</script>
+</body>
+</html>
