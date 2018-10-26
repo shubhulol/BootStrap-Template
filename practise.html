@@ -1,0 +1,81 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	<title>Hello World</title>
+	<style type="text/css">
+		.subBtn{
+			margin-left: 25px;
+		}
+	</style>
+</head>
+<body>
+<p>Please Enter a number</p>
+<p id="Demo"><input type="text" name="value" id="num" /><button class="subBtn" onclick="myFunction()">Submit</button></p>
+<p id="result"></p>
+<script type="text/javascript">
+	function myFunction(){
+		var age,vote;
+		age = Number(document.getElementById("num").value);
+		if(isNaN(age)){
+			vote = "Enter the num";
+		}else{
+			try{
+			if(age=="") throw "Please Enter a number";
+			if(age>5) throw "too low";
+		}catch(err){
+			document.getElementById("result").innerHTML = err;
+		}
+		vote = age>17?"You r allow":"You r not allow";
+		}
+		//document.getElementById("result").innerHTML = vote;
+	}
+</script>
+</body>
+</html> -->
+
+
+				<!-- gettng error in it -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Fuck You</title>
+	<script type="text/javascript">
+	function myaction(){
+		var val = document.forms["form"]["fname"].value;
+		if(val == ""){
+			alert("Please fill the name");
+		return false;
+	}else{
+		return true;
+	}
+}
+</script>
+</head>
+<body>
+<form name="form" action="fuck.html" method="post" onsubmit="return myaction()">
+NAME: <input type="text" name="fname">
+<input type="Submit" name="submit">
+	</form>
+</body>
+</html>
+
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	<title>Game</title>
+</head>
+<body>
+<div id="Divison">
+	
+	<table id="tab">
+		
+		<tr>
+			
+		</tr>
+
+	</table>
+
+</div>
+</body>
+</html> -->
