@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<link rel="stylesheet" type="text/css" href="signup.css">
+</head>
+<body>
+	<div>
+		<table>
+			<tr>
+				<td><input type="text" name="txt" id="firstName" placeholder="First name"></td>
+				<td><input type="text" name="txt" id="lastName" placeholder="Last name"></td>
+			</tr>
+			<tr >
+				<td colspan="2"><input type="password" name="pass" id="pass" placeholder="Mobile number or email"></td>
+			</tr>
+			<tr>
+				<td colspan="2"><input type="password" name="pass1" id="cpass" placeholder="New Password"></td>
+			</tr>
+			<tr>
+				<td><p id="bday"><strong>Birthday</strong></p></td>
+			</tr>
+			<tr>
+				<td><input type="date" name="date" id="date"></td>
+			</tr>
+			<tr>
+				<td>
+					<div><input type="radio" name="gender" value="male" id="gen2">Female
+						 <input type="radio" name="gender" value="male" id="gen1">Male</div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<button id="btn" onclick="fun()">Sign Up</button>
+				</td>
+			</tr>
+		</table>
+	</div>
+	<script type="text/javascript">
+		
+		function fun() {
+			var name = document.getElementById("firstName").value;
+			var lname = document.getElementById("lastName").value;
+			var password = document.getElementById("cpass").value;
+			var phone = document.getElementById("pass").value;
+			var regex = /^[a-zA-Z ]{2,30}$/;
+			if(name.test(regex)){
+				return
+			}
+		}
+
+	</script>
+</body>
+</html>
