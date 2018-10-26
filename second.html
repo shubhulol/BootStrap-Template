@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>first page</title>
+	<style type="text/css">
+	#Login{
+		border: 2px bold;
+		padding: 15px auto;
+		background: yellow;
+		width: 380px;
+		border: none;
+		margin: 15px auto;
+		margin-top: 200px;
+		display: none;
+		transition: all ease 2s;
+	}	
+	td{
+		text-align: center;
+		padding:20px auto;
+	}
+	input{
+		padding-left: 10px;
+		background: lightgrey;
+	}
+	input[type="text"],input[type="password"]{
+		font-family: inherit;
+		font-size: 20px;
+		font-weight: bold;
+		padding-left: 10px;
+	}
+	#uname{
+		padding-left: 20px;
+	}
+	#upass{
+		padding-left: 20px;
+	}
+	#tab{
+		padding-left: 30px;
+		padding: 20px;
+		margin: 0px auto;
+	}
+	#subBtn{
+		color: white;
+		background: red;
+		text-align: center;
+		padding: 5px;
+	}
+	#resetBtn{
+		color: white;
+		background: green;
+		text-align:center;
+		padding: 5px; 
+			}
+
+	#head{
+		height: 80px;
+		background: black;
+		margin: 0px;	
+			}
+	#menu ul{
+		list-style: none;
+	}
+	#menu ul li{
+		color: white;
+		float: left;
+		padding: 30px auto;
+		margin: 36px;
+		padding-left: 80px;
+		text-align: center;
+	}
+	#menu ul li:hover{
+		color: yellow;
+	}
+	.red{  border: 5px solid red; }
+	.green{  border: 5px solid green; }
+	</style>
+</head>
+<body>
+	<header id="head">
+<!-- 		<div id="logo">
+			<img src="E:\BjBhaiya\DataStructure.png">
+
+		</div> -->
+		<div id="menu">
+					<ul>
+							<li>HOME</li>
+							<li>ABOUT</li>
+							<li>CONTACT</li>
+							<li>ABOUT ME</li>
+							<li onclick="login()">LOGIN</li>
+
+					</ul>
+		</div>
+	</header>
+	<div id="Login">
+		<table id="tab">
+				<tr>
+						<td colspan="2">Login</td>
+				</tr>
+				<tr>
+						<td>username</td>
+						<td><input type="text" name="username" id="uname">
+							<div id="errName"></div>
+						</td>
+				</tr>
+				<tr>
+						<td>Password</td>
+						<td><input type="Password" name="password" id="upass">
+							<div id="errPwd"></div>
+						</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<button id="subBtn" onclick="show()">Submit</button>
+						<button id="resetBtn" onclick="reset()">Reset</button>
+					</td>
+				</tr>
+		</table>
+	</div>
+	<script type="text/javascript">
+		
+		function checkname(name){
+			
+			if(name.value.length < 4){
+				document.getElementById('errName').innerHTML = "Is it really your name?";
+			name.classList.remove("green");
+				
+				name.classList.add("red");
+				return false;
+			}
+			name.classList.remove("red");
+			name.classList.add("green");
+
+			document.getElementById('errName').innerHTML = "";
+			return true;
+		}
+		function checkpwd(pwd){
+			
+			if(pwd.value.length < 4){
+			pwd.classList.remove("green");
+
+				pwd.classList.add("red");
+				document.getElementById('errPwd').innerHTML = "Is it really a password?";
+				return false;
+			}
+			pwd.classList.remove("red");
+
+				pwd.classList.add("green");
+			document.getElementById('errPwd').innerHTML = "";
+			return true;
+		}
+
+
+		function show(){
+			var name = document.getElementById('uname');
+			var pass = document.getElementById('upass');
+		
+			if(!checkname(name) || !checkpwd(pass))
+				return;			
+			else 
+				console.log("username is "+name.value+" and password is "+pass.value);
+		}
+		function reset(){
+			var name = document.getElementById('uname');
+			var pass = document.getElementById('upass');
+			name.value= "";
+			pass.value = "";
+		}
+		function login(){
+			var Login = document.getElementById('Login');
+			if(Login.style.display=="none"){
+				Login.style.display = "block";
+			}else{
+				Login.style.display="none";
+			}
+		}
+	</script>
+</body>
+</html>
