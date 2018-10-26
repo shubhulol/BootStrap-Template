@@ -1,0 +1,86 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	<title>Fuck You</title>
+	<style type="text/css">
+		#tab{
+			border: 1px black solid;
+		}
+		#id1{
+			margin-top: middle;
+			margin-left: 150px;
+		}
+	</style>
+</head>
+<body>
+<form method="post" action="practise.html">
+	<div id="id1">
+		<table id="tab">
+			<tr>
+				<td><input type="text" name="" id="uName" placeholder="Username"></td>
+			</tr>
+			<tr>
+				<td><input type="password" name="" id="uPass" placeholder="password"></td>
+			</tr>
+			<tr>
+				<th><input type="submit" name="submit" id="submit" onclick="myFunction()"></th>
+			</tr>
+		</table>
+	</div>
+</form>
+<script type="text/javascript">
+	 
+	function myFunction(){
+		alert("Nhi Chala")
+		event.preventDefaults();
+	}
+
+</script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Game</title>
+</head>
+<body>
+	<div id="Division">
+		<table id="tab">
+			<tr>
+				<th id="start">Start Game</th>
+			</tr>
+			<tr>
+				<td><input type="submit" id="subBtn" name="subBtn" onclick="game()"></td>
+			</tr>
+		</table>
+	</div>
+		<script type="text/javascript">
+		function game(){
+			alert("chala");
+			var start = document.getElementById("start");
+			start.innerHTML = "";
+			var subbtn = document.getElementById("subBtn")
+			subbtn.innerHTML = "";
+			var counter = 0;
+			var ht = document.getElementById("bitch");
+			for(var  i = 0; i<3;++i){
+				var random_num = Math.floor(Math.random()*3);
+				console.log(random_num);
+				switch(random_num){
+					case 1:
+						document.write("<br>Enter your name");
+						document.write('<br><input type="text" id="name">');
+					break;
+					case 2:
+						document.write("<br>Enter your age");
+						document.write('<br><input type="text">')
+					break;
+					default:
+						document.write("<br>You Asshole...");	
+				}
+			}
+		}
+	</script>
+</body>
+</html>
