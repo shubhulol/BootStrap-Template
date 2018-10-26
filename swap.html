@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		#f1{
+
+			height: 98px;
+
+		}
+
+		#f2{
+
+			height: 38px;
+		}
+		#tab{
+
+			height: 60px;
+		}
+	</style>
+</head>
+<body>
+<form id="frm" method="post" action="practise.html">
+	
+	Username: <input type="text" name="uname" id="name">
+	<br><br>
+	Email: <input type="Email"  name="email" id="mail">
+		<br><br>
+	Password: <input type="Password" name="upass" id="pass">
+	<br><br>
+	<button type="submit" name="submit" value="Submit" style="margin-left: 105px;" onclick="fun()">Click Me</button>
+</form>
+<script type="text/javascript">
+	function fun(){
+	event.preventDefault();
+	var email = document.getElementById("mail").value;	
+	var regexEmail =/^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+	if(regexEmail.test(email)){
+		alert("Okay");
+		return true;
+	}else{
+		alert("Sorry");
+		return false;
+	}
+	}
+</script>
+</body>
+</html>
